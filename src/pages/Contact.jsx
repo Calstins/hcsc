@@ -1,4 +1,4 @@
-import { MapPin, Phone, MessageCircle, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react";
 import AnimatedHeadline from "../components/AnimatedHeadline";
 import Reveal from "../components/Reveal";
 import ContactForm from "../components/ContactForm";
@@ -16,18 +16,24 @@ export default function Contact() {
       <PageHeader />
 
       <section className="mx-auto max-w-7xl px-5 pb-20 sm:px-8 sm:pb-28">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
           <InfoCard
             icon={<MapPin className="h-5 w-5" strokeWidth={1.8} />}
-            title="Visit the clinic"
+            title="Visit us"
             lines={[CLINIC.address]}
             action={{ label: "Get directions", href: directionsUrl }}
           />
           <InfoCard
             icon={<Phone className="h-5 w-5" strokeWidth={1.8} />}
             title="Call us"
-            lines={[CLINIC.phonePrimaryDisplay, CLINIC.phoneSecondaryDisplay]}
+            lines={[CLINIC.phonePrimaryDisplay]}
             action={{ label: `Call ${CLINIC.phonePrimaryDisplay}`, href: `tel:${CLINIC.phonePrimaryTel}` }}
+          />
+          <InfoCard
+            icon={<Mail className="h-5 w-5" strokeWidth={1.8} />}
+            title="Email us"
+            lines={[CLINIC.email]}
+            action={{ label: "Send an email", href: `mailto:${CLINIC.email}` }}
           />
           <InfoCard
             icon={<MessageCircle className="h-5 w-5" strokeWidth={1.8} />}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { MapPin, Phone, MessageCircle, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, ArrowUpRight } from "lucide-react";
 import { CLINIC, NAV_LINKS } from "../data/content";
 import logo from "../assets/logo.png";
 
@@ -19,7 +19,7 @@ export default function Footer() {
               <div>
                 <p className="font-display text-lg font-semibold text-white">{CLINIC.name}</p>
                 <p className="text-xs uppercase tracking-[0.16em] text-brand-300">
-                  Ajah, Lagos
+                  Lagos, Nigeria
                 </p>
               </div>
             </div>
@@ -60,14 +60,15 @@ export default function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
-                <span className="flex flex-col gap-1">
-                  <a href={`tel:${CLINIC.phonePrimaryTel}`} className="hover:text-brand-300">
-                    {CLINIC.phonePrimaryDisplay}
-                  </a>
-                  <a href={`tel:${CLINIC.phoneSecondaryTel}`} className="hover:text-brand-300">
-                    {CLINIC.phoneSecondaryDisplay}
-                  </a>
-                </span>
+                <a href={`tel:${CLINIC.phonePrimaryTel}`} className="hover:text-brand-300">
+                  {CLINIC.phonePrimaryDisplay}
+                </a>
+              </li>
+              <li className="flex gap-3">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
+                <a href={`mailto:${CLINIC.email}`} className="hover:text-brand-300">
+                  {CLINIC.email}
+                </a>
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
@@ -87,7 +88,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} {CLINIC.name}. All rights reserved.</p>
-          <p>Gynaecology &amp; Obstetrics · Ajah, Lagos State, Nigeria</p>
+          <p>Gynaecology &amp; Obstetrics · Lagos State, Nigeria</p>
         </div>
       </div>
     </footer>

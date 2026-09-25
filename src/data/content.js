@@ -1,19 +1,18 @@
-// Central content store for Her Care Specialist Clinic.
+// Central content store for Palicon Hospital.
 // Editing copy, contact details or service listings here updates the whole site.
 
 export const CLINIC = {
-  name: "Her Care Specialist Clinic",
-  shortName: "Her Care",
+  name: "Palicon Hospital",
+  shortName: "Palicon",
   tagline: "Gynaecology & Obstetrics, delivered with dignity",
-  address: "110 Saliu Obodo Road, off Addo Road, Ajah, Lagos, Nigeria",
-  addressMapQuery: "110 Saliu Obodo Road, off Addo Road, Ajah, Lagos, Nigeria",
-  phonePrimaryDisplay: "0703 381 3840",
-  phonePrimaryTel: "+2347033813840",
-  phoneSecondaryDisplay: "0802 319 1294",
-  phoneSecondaryTel: "+2348023191294",
-  whatsappNumber: "2347033813840",
+  address: "1 Popoola Odusami Street, Balogun Ln, Abule Folly, Lagos 105101, Lagos",
+  addressMapQuery: "1 Popoola Odusami Street, Balogun Ln, Abule Folly, Lagos 105101, Lagos",
+  phonePrimaryDisplay: "0807 260 6299",
+  phonePrimaryTel: "+2348072606299",
+  whatsappNumber: "2348072606299",
   whatsappMessage:
-    "Hello Her Care Specialist Clinic, I would like to book an appointment.",
+    "Hello Palicon Hospital, I would like to book an appointment.",
+  email: "paliconhospital@gmail.com",
 };
 
 export const NAV_LINKS = [

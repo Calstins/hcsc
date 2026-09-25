@@ -47,7 +47,7 @@ function PageHeader() {
         <Reveal delay={0.3}>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg">
             {CLINIC.name} exists to make comprehensive, exemplary healthcare
-            attainable for women in Ajah and across Lagos — in a setting that
+            attainable for women across Lagos — in a setting that
             never asks you to compromise on dignity to receive good care.
           </p>
         </Reveal>
@@ -86,7 +86,7 @@ function Intro() {
               <div className="overflow-hidden rounded-[28px]">
                 <img
                   src={IMAGES.aboutDoctor}
-                  alt="A consultant at Her Care Specialist Clinic"
+                  alt="A consultant at Palicon Hospital"
                   className="h-[420px] w-full object-cover sm:h-[480px]"
                 />
               </div>
@@ -134,7 +134,7 @@ function ValuesGrid() {
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
       <SectionHeading
         align="center"
-        title="Why women choose Her Care"
+        title="Why women choose Palicon"
         description="Five commitments that shape every appointment, every recommendation, every conversation."
         className="mx-auto max-w-2xl"
       />

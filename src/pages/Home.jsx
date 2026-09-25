@@ -52,7 +52,7 @@ function Hero({ waHref }) {
 
           <Reveal delay={0.35}>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-ink-soft sm:text-lg">
-              {CLINIC.name} is a gynaecology and obstetrics practice in Ajah, Lagos,
+              {CLINIC.name} is a gynaecology and obstetrics practice in Lagos,
               built on quality, compassion and dignity — helping every patient feel
               whole and heard, backed by modern medical technology.
             </p>
@@ -97,13 +97,13 @@ function Hero({ waHref }) {
           <div className="relative overflow-hidden rounded-[32px] border border-navy-900/10 shadow-2xl shadow-navy-900/10">
             <img
               src={IMAGES.heroDoctor}
-              alt="Specialist at Her Care Specialist Clinic"
+              alt="Specialist at Palicon Hospital"
               className="h-[420px] w-full object-cover sm:h-[540px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-6 -left-6 hidden w-56 rounded-2xl border border-navy-900/10 bg-white p-5 shadow-xl shadow-navy-900/10 sm:block">
-            <p className="font-display text-2xl font-medium text-navy-900">Ajah, Lagos</p>
+            <p className="font-display text-2xl font-medium text-navy-900">Lagos</p>
             <p className="mt-1 text-sm text-ink-soft">Gynaecology &amp; Obstetrics</p>
           </div>
         </motion.div>
@@ -154,7 +154,7 @@ function AboutPreview() {
             <div className="relative overflow-hidden rounded-[28px]">
               <img
                 src={IMAGES.aboutDoctor}
-                alt="A consultant at Her Care Specialist Clinic"
+                alt="A consultant at Palicon Hospital"
                 className="h-[440px] w-full object-cover sm:h-[500px]"
               />
             </div>
@@ -331,13 +331,13 @@ function MapPreview() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
         <div>
           <SectionHeading
-            title="Find us in Ajah"
-            description="Easy to reach from the Lekki–Epe corridor, with parking on-site."
+            title="Find us"
+            description="Easy to reach, with parking on-site."
           />
           <Reveal delay={0.15}>
             <div className="mt-8 space-y-3 text-sm leading-relaxed text-ink-soft sm:text-base">
               <p className="font-medium text-navy-900">{CLINIC.address}</p>
-              <p>{CLINIC.phonePrimaryDisplay} (WhatsApp) · {CLINIC.phoneSecondaryDisplay}</p>
+              <p>{CLINIC.phonePrimaryDisplay} (Call / WhatsApp) · {CLINIC.email}</p>
             </div>
           </Reveal>
         </div>

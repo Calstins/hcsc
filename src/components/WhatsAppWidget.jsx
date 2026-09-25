@@ -22,7 +22,7 @@ export default function WhatsAppWidget() {
           >
             <div className="flex items-start justify-between gap-2">
               <p className="font-display text-sm font-semibold text-navy-900">
-                Talk to Her Care Clinic
+                Talk to Palicon Hospital
               </p>
               <button
                 aria-label="Close"

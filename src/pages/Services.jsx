@@ -138,7 +138,7 @@ function NeedHelpBanner({ waHref }) {
 function MapSection() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
-      <SectionHeading title="Find us" description="110 Saliu Obodo Road, off Addo Road, Ajah, Lagos." />
+      <SectionHeading title="Find us" description={CLINIC.address} />
       <Reveal delay={0.1} className="mt-8 block">
         <MapEmbed height="420px" />
       </Reveal>

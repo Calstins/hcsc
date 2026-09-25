@@ -12,7 +12,7 @@ export default function MapEmbed({ height = "420px", className = "" }) {
       style={{ height }}
     >
       <iframe
-        title="Her Care Specialist Clinic location"
+        title="Palicon Hospital location"
         src={embedSrc}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

@@ -38,10 +38,10 @@ export default function Header() {
                 scrolled || open ? "text-navy-900" : "text-navy-900"
               }`}
             >
-              Her Care
+              Palicon
             </span>
             <span className="block text-[10px] font-medium uppercase tracking-[0.16em] text-brand-600 sm:text-[11px]">
-              Specialist Clinic
+              Hospital
             </span>
           </span>
         </NavLink>
