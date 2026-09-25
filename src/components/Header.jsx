@@ -31,7 +31,11 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
         <NavLink to="/" className="flex items-center gap-2.5 shrink-0">
-          <img src={logo} alt={CLINIC.name} className="h-11 w-11 object-contain sm:h-12 sm:w-12" />
+          <img
+            src={logo}
+            alt={CLINIC.name}
+            className="h-11 w-11 object-contain sm:h-12 sm:w-12"
+          />
           <span className="leading-tight">
             <span
               className={`block font-display text-[15px] font-semibold tracking-tight sm:text-base ${
@@ -54,7 +58,9 @@ export default function Header() {
               end={link.to === "/"}
               className={({ isActive }) =>
                 `relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive ? "text-brand-600" : "text-navy-800 hover:text-brand-600"
+                  isActive
+                    ? "text-brand-600"
+                    : "text-navy-800 hover:text-brand-600"
                 }`
               }
             >
@@ -65,7 +71,11 @@ export default function Header() {
                     <motion.span
                       layoutId="nav-pill"
                       className="absolute inset-0 -z-10 rounded-full bg-brand-50"
-                      transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 32,
+                      }}
                     />
                   )}
                 </>
