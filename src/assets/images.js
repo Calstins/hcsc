@@ -2,6 +2,8 @@
 // required). Photographer credit is kept here as a courtesy.
 // Pattern: https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg
 
+import consultationImg from "./consultation.jpg";
+
 const pexels = (id, w = 1600) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
 
@@ -11,7 +13,7 @@ export const IMAGES = {
   // Clean studio portrait, used for the About page intro.
   aboutDoctor: pexels(19596247, 1600), // Martins John
   // Consultation / diagnostic scene for the Services intro.
-  consultation: pexels(7088535, 1600), // MART PRODUCTION
+  consultation: consultationImg,
 
   // Clinical team, used across the About "meet the team" strip and cards.
   team: [
